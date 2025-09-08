@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ServiceTitan Opt‑In Form</title>
+  <style>
+
+    :root { color-scheme: light dark; }
+    html, body { height: 100%; margin: 0; }
+
+    
+    body {
+      display: grid;
+      place-items: center; 
+      min-height: 100dvh;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      background: radial-gradient(ellipse at 50% -20%, #f5f7fb, #e9eef6);
+    }
+
+    
+    .frame-wrap {
+      width: min(100vw - 2rem, 480px); 
+      aspect-ratio: 3 / 4; 
+      max-height: calc(100dvh - 2rem);
+      box-shadow: 0 10px 30px rgba(0,0,0,.12);
+      border-radius: 16px;
+      overflow: hidden;
+      background: #fff; 
+    }
+    .frame-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="frame-wrap" aria-label="ServiceTitan Opt-In Form">
+    <iframe
+      src="https://opt-in-form.servicetitan.com/?token=55d6c075-a7c8-4ac4-a0fe-78e200faf449"
+      title="Opt-In Form"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+
+  <noscript>This page requires JavaScript enabled to properly size and display the embedded form.</noscript>
+</body>
+</html>
